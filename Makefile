@@ -68,4 +68,4 @@ test_coverage: build
 
 # Glide update
 update:
-	@glide u
+	@glide up
