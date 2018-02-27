@@ -1,0 +1,17 @@
+servername: kai
+
+system:
+  swapdir: /tmp/
+  logfile: 
+  port: 8000
+  dbdriver: memory
+  mongohost: localhost
+  ngpu: 2
+  workers: 4
+
+yolo:
+  datacfg: "./cfg/coco.data"
+  cfgfile: "./cfg/yolo.cfg"
+  weightfile: "./yolo.weights"
+  thresh: 0.24
+  hierthresh: 0.5
