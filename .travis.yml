@@ -35,7 +35,7 @@ before_install:
   - sudo ln /dev/null /dev/raw1394
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-  - ./travis_build_darknet.sh
+  - sudo bash ./travis_build_darknet.sh
 
 before_cache:
   - rm -f $HOME/fresh-cache
