@@ -7,9 +7,9 @@ type JobStatus string
 type Category int
 
 const (
-	// IMAGE repersents a image job
+	// IMAGE represents a image job
 	IMAGE Category = iota
-	// VIDEO repersents a video job
+	// VIDEO represents a video job
 	VIDEO
 )
 
