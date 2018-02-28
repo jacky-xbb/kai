@@ -2,6 +2,7 @@
 set -eux -o pipefail
 
 OPENCV_VERSION=${OPENCV_VERSION:-3.4.0}
+DARKNET="darknet"
 
 #GRAPHICAL=ON
 GRAPHICAL=${GRAPHICAL:-OFF}
@@ -54,7 +55,20 @@ cmake -D WITH_IPP=${GRAPHICAL} \
 make -j8
 make install && touch $HOME/usr/installed-${OPENCV_VERSION}
 
-
 cd ../..
 touch $HOME/fresh-cache
 fi
+
+# Build Darknet
+git clone https://github.com/ZanLabs/darknet.git 
+cd $(DARKNET)
+# optionally GPU=1
+make OPENCV=1 && make install
+cd ..
+rmdir $(DARKNET) 
+  
+  
+
+
+
+
