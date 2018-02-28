@@ -64,6 +64,7 @@ test: build
 	@ginkgo -r --slowSpecThreshold=20 --succinct .
 
 test_coverage: build
+	@go get github.com/modocache/gover
 	@ginkgo -r --slowSpecThreshold=20 --cover --succinct .
 	@gover
 	@mv gover.coverprofile $(COVERAGE_FILE)
