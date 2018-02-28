@@ -28,13 +28,14 @@ addons:
     - xvfb
 
 before_install:
-  - ./travis_build_darknet.sh
+  - ./travis_build_opencv.sh
   - export PKG_CONFIG_PATH=$(pkg-config --variable pc_path pkg-config):$HOME/usr/lib/pkgconfig
   - export INCLUDE_PATH=$HOME/usr/include:${INCLUDE_PATH}
   - export LD_LIBRARY_PATH=$HOME/usr/lib:${LD_LIBRARY_PATH}
   - sudo ln /dev/null /dev/raw1394
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - ./travis_build_darknet.sh
 
 before_cache:
   - rm -f $HOME/fresh-cache
