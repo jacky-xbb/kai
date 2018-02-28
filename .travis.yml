@@ -26,6 +26,8 @@ addons:
     - libjasper-dev
     - libdc1394-22-dev
     - xvfb
+    - nvidia-profiler
+    - nvidia-cuda-dev
     - nvidia-cuda-toolkit
 
 before_install:
