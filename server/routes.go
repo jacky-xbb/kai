@@ -20,9 +20,9 @@ const (
 
 // Routes defines a map between the routes and the routes' argument
 var Routes = map[Route]RouterArguments{
-	CreateJob:     RouterArguments{Path: "/jobs", Method: http.MethodPost},
-	StartJob:      RouterArguments{Path: "/jobs/{jobID}/start", Method: http.MethodPost},
-	ListJobs:      RouterArguments{Path: "/jobs", Method: http.MethodGet},
-	GetJobDetails: RouterArguments{Path: "/jobs/{jobID}", Method: http.MethodGet},
-	DeleteJob:     RouterArguments{Path: "/jobs/{jobID}", Method: http.MethodDelete},
+	CreateJob:     {Path: "/jobs", Method: http.MethodPost},
+	StartJob:      {Path: "/jobs/{jobID}/start", Method: http.MethodPost},
+	ListJobs:      {Path: "/jobs", Method: http.MethodGet},
+	GetJobDetails: {Path: "/jobs/{jobID}", Method: http.MethodGet},
+	DeleteJob:     {Path: "/jobs/{jobID}", Method: http.MethodDelete},
 }
