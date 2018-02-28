@@ -65,4 +65,4 @@ cd ${DARKNET}
 # optionally GPU=1
 make OPENCV=1 && make install
 cd ..
-rmdir ${DARKNET} 
+rm -rf ${DARKNET} 
