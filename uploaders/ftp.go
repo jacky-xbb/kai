@@ -15,7 +15,7 @@ import (
 	"github.com/ZanLabs/kai/types"
 )
 
-// FTPUpload uploads the file using FTP. Job Destination should be
+// FTPUpload uploades the file using FTP. Job Destination should be
 // in format: ftp://login:password@host/path
 func FTPUpload(logger *logging.Logger, dbInstance db.Storage, jobID string) error {
 	logger.Infof("start-ftp-upload  jobid: %s", jobID)
