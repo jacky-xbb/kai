@@ -26,6 +26,7 @@ addons:
     - libjasper-dev
     - libdc1394-22-dev
     - xvfb
+    - nvidia-cuda-toolkit
 
 before_install:
   - ./travis_build_opencv.sh
