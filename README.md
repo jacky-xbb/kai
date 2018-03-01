@@ -1,4 +1,10 @@
-Kai is a objection detection cloud services based on YOLO/Darknet. 
+[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://godoc.org/github.com/ZanLabs/kai)
+[![Go Report Card](https://goreportcard.com/badge/github.com/labstack/echo?style=flat-square)](https://goreportcard.com/report/github.com/ZanLabs/kai)
+[![Build Status](http://img.shields.io/travis/labstack/echo.svg?style=flat-square)](https://travis-ci.org/ZanLabs/kai)
+[![Codecov](https://img.shields.io/codecov/c/github/labstack/echo.svg?style=flat-square)](https://codecov.io/gh/ZanLabs/kai) 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://raw.githubusercontent.com/ZanLabs/kai/master/README.md)
+
+**Kai is a objection detection cloud services based on YOLO/Darknet.**
 
 ## Features
 - Backend on the YOLO/Darknet of golang binding
