@@ -2,6 +2,8 @@
 
 Golang Configuration tool that support YAML, JSON, TOML, Shell Environment
 
+[![wercker status](https://app.wercker.com/status/9ebd3684ff8998501af5aac38a79a380/s/master "wercker status")](https://app.wercker.com/project/byKey/9ebd3684ff8998501af5aac38a79a380)
+
 ## Usage
 
 ```go
@@ -69,6 +71,17 @@ configor.New(&configor.Config{Verbose: true}).Load(&Config, "config.json")
 ```go
 // Earlier configurations have higher priority
 configor.Load(&Config, "application.yml", "database.json")
+```
+
+* Return error on unmatched keys
+
+Return an error on finding keys in the config file that do not match any fields in the config struct.
+In the example below, an error will be returned if config.toml contains keys that do not match any fields in the ConfigStruct struct.
+If ErrorOnUnmatchedKeys is not set, it defaults to false.
+Note that this is currently only supported for toml and yaml files. ErrorOnUnmatchedKeys will be ignored for json files. This may change in the future when the json library adds support for this [https://github.com/golang/go/issues/15314].
+
+```go
+err := configor.New(&configor.Config{ErrorOnUnmatchedKeys: true}).Load(&ConfigStruct, "config.toml")
 ```
 
 * Load configuration by environment
@@ -161,10 +174,9 @@ func main() {
 }
 ```
 
-## Supporting the project
+## Contributing
 
-[![http://patreon.com/jinzhu](http://patreon_public_assets.s3.amazonaws.com/sized/becomeAPatronBanner.png)](http://patreon.com/jinzhu)
-
+You can help to make the project better, check out [http://gorm.io/contribute.html](http://gorm.io/contribute.html) for things you can do.
 
 ## Author
 

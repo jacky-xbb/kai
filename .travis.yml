@@ -29,6 +29,7 @@ addons:
     - nvidia-profiler
     - nvidia-cuda-dev
     - nvidia-cuda-toolkit
+    - libcudnn7
 
 before_install:
   - ./travis_build_opencv.sh

@@ -7,7 +7,7 @@ system:
   dbdriver: memory
   mongohost: localhost
   ngpu: 2
-  workers: 4
+  workers: 8
 
 yolo:
   datacfg: "./cfg/coco.data"

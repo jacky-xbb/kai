@@ -1,5 +1,5 @@
 hash: df7bbf31bf46464462f01cdf37bacf1eed95597165242d63871ceba2c8f46f36
-updated: 2018-02-28T07:32:51.621471+08:00
+updated: 2018-03-21T11:28:33.007014+08:00
 imports:
 - name: github.com/aws/aws-sdk-go
   version: f7f1ee9550cc76ceea731d99c8dbe00a0c39f66d
@@ -39,13 +39,13 @@ imports:
 - name: github.com/dchest/uniuri
   version: 8902c56451e9b58ff940bbe5fec35d5f9c04584a
 - name: github.com/go-ini/ini
-  version: 32e4be5f41bb918afb6e37c07426e2ddbcb6647e
+  version: 6ecc596bd756a16c6e93e4ef9225ecdb9f54ed2c
 - name: github.com/gorilla/context
   version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
 - name: github.com/gorilla/mux
   version: 53c1911da2b537f792e7cafcb446b05ffe33b996
 - name: github.com/jinzhu/configor
-  version: 6ecfe629230f24c2e92c7894c6ab21b83b757a39
+  version: ec34f328956f53dfbd06e9f5306e37e6943443c3
 - name: github.com/jmespath/go-jmespath
   version: c2b33e8439af944379acbdd9c3a5fe0bc44bd8a5
 - name: github.com/modocache/gover
@@ -55,7 +55,7 @@ imports:
 - name: github.com/secsy/goftp
   version: 503caa01c039d70e4597a23cf5c663cc1d8a53b6
 - name: github.com/ZanLabs/go-yolo
-  version: 5dca52f877efffc7a49126b4e6b8660983f93e9f
+  version: 47fb2b48641cc9582c52891fd1d0325065793608
 - name: gopkg.in/mgo.v2
   version: 3f83fa5005286a7fe593b055f0d7771a7dce4655
   subpackages:
