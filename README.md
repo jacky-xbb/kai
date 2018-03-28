@@ -12,6 +12,19 @@
 - support S3 download and upload
 - support Ftp download and upload
 
+## Precondition
+- nvidia-docker 2.0
+- CUDA
+- cudnn 
+
+## Docker
+```bash
+git pull yummybian/kai
+sudo docker run --runtime nvidia -it --rm -p 8000:8000 -v /path/to/config.yaml:/kai-service/config.yaml yummybian/kai bash
+or
+sudo docker run --runtime nvidia -d --name kai -p 8000:8000 -v /path/to/config.yaml:/kai-service/config.yaml yummybian/kai 
+```
+
 ## Setting Up
 
 First make sure you have [go-yolo](https://github.com/ZanLabs/go-yolo) installed on your machine. 
