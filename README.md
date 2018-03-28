@@ -19,7 +19,7 @@
 
 ## Docker
 ```bash
-git pull yummybian/kai
+docker pull yummybian/kai
 sudo docker run --runtime nvidia -it --rm -p 8000:8000 -v /path/to/config.yaml:/kai-service/config.yaml yummybian/kai bash
 or
 sudo docker run --runtime nvidia -d --name kai -p 8000:8000 -v /path/to/config.yaml:/kai-service/config.yaml yummybian/kai 
